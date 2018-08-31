@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<Button-->
+        <!--android:id="@+id/btn_submit"-->
+        <!--android:text="@string/new_question_total_subject"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/b"-->
+        <!--android:text="我是一个小小"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/btn_submit"-->
+        <!--app:layout_constraintRight_toRightOf="parent"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/c"-->
+        <!--android:text="@string/app_name"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/btn_submit"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/btn_submit" />-->
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/app_name"-->
+        <!--android:id="@+id/btn_last"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/b"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@drawable/bar_view">
+        <com.example.yangxiaoyu.myapplication.BarView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen10"
+            android:id="@+id/barView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:itemColor="#F77878"
+            app:spaceLeft="2dp"
+            app:itemSpace="4dp"
+            app:spaceColor="@color/color_gray_cccccc"
+            app:itemRadius="30dp"/>
+    </RelativeLayout>
+</RelativeLayout>

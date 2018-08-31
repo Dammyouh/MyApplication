@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BarView">
+        <attr name="itemColor" format="color"/>
+        <attr name="spaceColor" format="color"/>
+        <attr name="spaceLeft" format="dimension"/>
+        <attr name="itemSpace" format="dimension"/>
+        <attr name="itemRadius" format="dimension"/>
+    </declare-styleable>
+</resources>
