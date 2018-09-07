@@ -1,6 +1,7 @@
 package com.example.yangxiaoyu.myapplication
 
 import android.content.Context
+import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.DisplayMetrics
@@ -15,19 +16,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initView()
+        initStatusBar()
+    }
+
+    private fun initStatusBar() {
+
     }
 
     private fun initView() {
-        var progressNum = 4
-        val totalNum = 4
-        val dm = resources.displayMetrics
-        val width = dm.widthPixels
-        if (progressNum > totalNum) {
-            progressNum = totalNum
-        }
-        barView.setProgressNum(progressNum)
-        barView.setItemWidth((width - dip2px(this,4f)* (totalNum - 1) - 2 * dip2px(this,2f)) / totalNum)
-        barView.setHasDone(progressNum == totalNum)
+//        barView.setCurrentNum(2)
+//        barView.setTotalNum(6)
+//        up_bar_view.setData(6,13)
+        barView.setTotalNum(6)
+        barView.setCurrentNum(2)
     }
 
     companion object {
