@@ -29,6 +29,7 @@ public class BaseActivity extends AppCompatActivity {
             // 设置状态栏透明
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
+
             // 设置根布局的参数,先判断有没有状态栏
 
             ViewGroup view = findViewById(android.R.id.title);
